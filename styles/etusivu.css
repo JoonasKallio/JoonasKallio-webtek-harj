@@ -1,0 +1,120 @@
+h1,
+h2,
+p {
+  font-family: "Lora", serif;
+  color: black;
+}
+/* nav määritykset */
+nav {
+  background-color: #3f3223f3;
+  font-family: "Lora", serif;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 50px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 65px;
+  z-index: 1;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+nav a {
+  margin-left: 20px;
+  border-radius: 10px;
+  background-color: #5a4631;
+}
+nav a:hover {
+  background-color: #2e2419;
+  border-radius: 10px;
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+nav a.active {
+  background-color: #2e2419;
+}
+/* footer määritykset */
+footer {
+  background-color: #3f3223f3;
+  font-family: "Lora", serif;
+  padding: 20px 0;
+  text-align: center;
+  max-width: 100%;
+  margin-top: 28px;
+}
+footer .text {
+  color: black;
+}
+
+/* sivun taustakuva */
+body {
+  background-image: url(../images/photoshopattutausta.jpg);
+  background-size: cover;
+  overflow-x: hidden;
+}
+/* Accordion tyylittely */
+#images {
+  max-width: 360px;
+}
+#images img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+.accordion-body {
+  background-color: #e6e2d3;
+}
+.accordion button {
+  background-color: #c4b7a6;
+}
+/* keski teksti */
+#coffeebreak {
+  text-align: center;
+}
+#coffeebreak p {
+  font-size: 20px;
+  font-weight: bold;
+}
+#coffeebreak h1 {
+  font-size: 92px;
+}
+/* Menun tyylit */
+.text-area {
+  background-color: #e6e2d3;
+  border: 2px solid #ccc;
+  border-color: #5a4631;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 300px;
+  font-size: 23px;
+  float: right;
+}
+.text-area p {
+  font-weight: bold;
+}
+
+/* pienemmät näytöt */
+@media only screen and (max-width: 768px) {
+  /* nav määritykset */
+  nav {
+    font-size: 20px;
+    height: 50px;
+  }
+  nav a {
+    margin-left: 10px;
+    font-size: 18px;
+    padding: 5px 10px;
+  }
+  /* keski teksti */
+  #coffeebreak h1 {
+    font-size: 60px;
+  }
+  #coffeebreak p {
+    font-size: 18px;
+  }
+  /* Menu */
+  .text-area {
+    max-width: 250px;
+    font-size: 18px;
+  }
+}
